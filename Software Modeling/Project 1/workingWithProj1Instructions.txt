@@ -1,0 +1,351 @@
+/*
+ * Anthony Redamonti
+ * Professor Gregory Wagner
+ * CSE 681 Software Modeling
+ * Project 1
+ * 7/27/2022
+ * 
+ * The following program asks the user for an input JSON file.
+ * The JSON file is checked for validity. Its contents are then
+ * converted to a string and deserialized into a Glossary object.
+ * The contents of the Glossary object are displayed to the console.
+ */
+
+using System.Text.Json;
+using System.Text.Json.Nodes;
+using System.Runtime.Serialization;
+using Newtonsoft.Json;
+
+namespace Project1
+{
+    /// <summary>
+    /// Below is the public TestFunctionality class.
+    /// It will ask the user for an input JSON file and then validate its content.
+    /// The file is then passed to the Utility class to be deserialized into a 
+    /// glossary object. The contents of the glossary object are displayed to the 
+    /// console.
+    /// </summary>
+    public class TestFunctionality
+    {
+        // the main method will accept the JSON file from the user.
+        static public void Main(String[] stringArgs)
+        {
+            int error = 1;
+            string inputFile = null;
+            FileManagement fileManagementObj = new FileManagement();
+            Glossary glossaryObj = new Glossary();
+            Utility utilityObj = new Utility();
+
+            // get the input JSON file from the user.
+            try
+            {
+                // make sure the user entered something.
+                while ((inputFile == null) || (inputFile == "") || (error != 0))
+                {
+                    // ask the user for their name.
+                    Console.WriteLine("Please enter a JSON file (.json extension): ");
+
+                    // update the string.
+                    inputFile = Console.ReadLine();
+
+                    // update the error integer (attempt to validate the file)
+                    error = fileManagementObj.validateFile(inputFile);
+                }
+
+                // create the new glossary object.
+                utilityObj.createGlossaryObj(inputFile, ref glossaryObj);
+
+                // display the content of the glossary object on the console.
+                glossaryObj.displayContent();
+
+                // now we will create another glossary and add them together.
+                Glossary glossObj2 = new Glossary();
+                utilityObj.createGlossaryObj(inputFile, ref glossObj2);
+                utilityObj.addGlossaryObjs(ref glossaryObj, ref glossObj2);
+
+                // print the content of glossObj2
+                glossObj2.displayContent();
+            }
+            // catch any exception here.
+            catch (Exception ex)
+            {
+                Console.WriteLine("Exception thrown in TestFunctionality::Main method: " + ex.Message);
+                throw;
+            }
+        }
+    }
+
+    /// <summary>
+    /// The Utility class is used to create new glossary objects from input JSON files.
+    /// They are first converted to string format. Then they are deserialized into a 
+    /// glossary object. The glossary object passed by reference is updated.
+    /// </summary>
+    public class Utility
+    {
+        /// <summary>
+        /// Below is the public createGlossaryObj method.
+        /// It will convert the contents of the file to a string.
+        /// The string will be deserialized and stored inside a Glossary object.
+        /// </summary>        
+        public void createGlossaryObj(string inputFile, ref Glossary glossaryObj)
+        {
+            try
+            {
+                // create a JSON string by reading all the text in the file.
+                string jsonStr = File.ReadAllText(inputFile);
+                
+                // create a glossary object by deserializing the JSON string using the Glossary Object class structure.
+                glossaryObj = JsonConvert.DeserializeObject<Glossary>(jsonStr);
+            }
+            // catch any exception here.
+            catch (Exception ex)
+            {
+                Console.WriteLine("Exception thrown in Utility::createGlossaryObj method: " + ex.Message);
+                throw;
+            }
+        }
+
+        /// <summary>
+        /// Below is the public addGlossaryObjs method.
+        /// It will add the contents of the first glossary object to the second.
+        /// </summary>        
+        public void addGlossaryObjs(ref Glossary glossObj1, ref Glossary glossObj2)
+        {
+            try
+            {
+                foreach (var entry in glossObj1.glossaryContentObj.glossDivObj.glossListDict)
+                {
+                    glossObj2.glossaryContentObj.glossDivObj.glossListDict.Add(entry.Key, entry.Value);
+                }
+            }
+            // catch any exception here.
+            catch (Exception ex)
+            {
+                Console.WriteLine("Exception thrown in Utility::addGlossaryObjs method: " + ex.Message);
+                throw;
+            }
+        }
+    }
+
+    /// <summary>
+    /// Below is the public Glossary class.
+    /// Use the JsonConvert.DeserializeObject<Glossary>(JsonString) method 
+    /// to populate the properties of an instance of this class. Then use 
+    /// the displayContent method to view the glossary's content on the console.
+    /// </summary>
+    public class Glossary
+    {
+        [JsonProperty("glossary")]
+        public GlossaryContent glossaryContentObj { get; set; }
+
+        // display the content of the Glossary object to the user.
+        public void displayContent()
+        {
+            glossaryContentObj.displayContent();
+        }
+    }
+
+    /// <summary>
+    /// Below is the public GlossaryContent class.
+    /// It holds important JsonProperties for the instance of the glossary class.
+    /// </summary>
+    public class GlossaryContent
+    {
+        [JsonProperty("title")]
+        public string? title { get; set; }
+
+        [JsonProperty("GlossDiv")]
+        public GlossDiv glossDivObj { get; set; }
+
+        // display the content of the GlossaryContent object to the user.
+        public void displayContent()
+        {
+            Console.WriteLine("Glossary title: " + title);
+            glossDivObj.displayContent();
+        }
+    }
+
+    /// <summary>
+    /// Below is the public GlossDiv class.
+    /// It holds important JsonProperties for the GlossDiv object. 
+    /// </summary>
+    public class GlossDiv
+    {
+        [JsonProperty("title")]
+        public string? title { get; set; }
+
+        [JsonProperty("GlossList")]
+        public Dictionary<string, GlossEntry> glossListDict { get; set; }
+
+        // display the content of the instance of the GlossDiv class.
+        public void displayContent()
+        {
+            Console.WriteLine("   Gloss Div Title: " + title);
+            foreach (var entry in glossListDict)
+            {
+                entry.Value.displayContent();
+            }
+        }
+    }
+
+    /// <summary>
+    /// Below is the public GlossEntry class.
+    /// It holds important JsonProperties for an entry in the GlossDiv.
+    /// </summary>
+    public class GlossEntry
+    {
+        [JsonProperty("ID")]
+        public string? ID { get; set; }
+
+        [JsonProperty("SortAs")]
+        public string? SortAs { get; set; }
+
+        [JsonProperty("GlossTerm")]
+        public string? GlossTerm { get; set; }
+
+        [JsonProperty("Acronym")]
+        public string? Acronym { get; set; }
+
+        [JsonProperty("Abbrev")]
+        public string? Abbrev { get; set; }
+
+        [JsonProperty("GlossDef")]
+        public GlossDef glossDefObj { get; set; }
+
+        [JsonProperty("GlossSee")]
+        public string? GlossSee { get; set; }
+
+        // display the contents of the gloss entry.
+        public void displayContent()
+        {
+            Console.WriteLine("      ID: " + ID);
+            Console.WriteLine("      SortAs: " + SortAs);
+            Console.WriteLine("      GlossTerm: " + GlossTerm);
+            Console.WriteLine("      Acronym: " + Acronym);
+            Console.WriteLine("      Abbrev: " + Abbrev);
+            Console.WriteLine("      GlossDef:");
+            glossDefObj.displayContent();
+            Console.WriteLine("      GlossSee: " + GlossSee);
+        }
+    }
+
+    /// <summary>
+    /// Below is the public GlossDef class.
+    /// It holds important JsonProperties for the definition of the gloss entry.
+    /// </summary>
+    public class GlossDef
+    {
+        [JsonProperty("para")]
+        public string? para { get; set; }
+
+        [JsonProperty("GlossSeeAlso")]
+        public IList<string> GlossSeeAlso { get; set; }
+
+        // display the contents of the Gloss Def object.
+        public void displayContent()
+        {
+            Console.WriteLine("         para: " + para);
+            Console.WriteLine("         The content of the GlossSeeAlso list: ");
+            for (int i = 0; i < GlossSeeAlso.Count; i++)
+            {
+                Console.WriteLine("            " + GlossSeeAlso[i]);
+            }
+        }
+    }
+
+    /// <summary>
+    /// The file management class is responsible for verifying 
+    /// the user input. The user must enter a valid, non-empty
+    /// JSON file.
+    /// </summary>
+    public class FileManagement
+    {
+        public int validateFile(string inputFileName)
+        {
+            int error = 0;
+
+            // call the three private methods used to check for validity.
+            error = verifyFileExtension(inputFileName);
+            error = verifyFileExists(inputFileName);
+            error = verifyFileIsNotEmpty(inputFileName);
+
+            // return the error code if there is one. Error = 0 on success.
+            return error;
+        }
+
+        // verify the file's extension is .json. If there was an exception, return -1. 
+        // If the file extension is not .json, return -2. If the file extension is .json,
+        // return 0.
+        private int verifyFileExtension(string inputFileName)
+        {
+            string extension = null;
+            try
+            {
+                extension = Path.GetExtension(inputFileName);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return -1;
+            }
+            if(extension != ".json")
+            {
+                Console.WriteLine("File extension is " + extension + ". Please enter a .json file.");
+                return -2;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+
+        // Verify the file exists. If it does not exist, return -3. If there was an exception,
+        // return -4. If the file exists, return 0.
+        private int verifyFileExists(string inputFileName)
+        {
+            try
+            {
+                FileInfo fileInfoObj = new FileInfo(inputFileName);
+                if (!fileInfoObj.Exists)
+                {
+                    Console.WriteLine(inputFileName + " does not exist.");
+                    return -3;
+                }
+                else
+                {
+                    return 0;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return -4;
+            }
+        }
+
+        // Verify that the file is not empty. Use the FileInfo object's length method to 
+        // check for the existance of file content. If the file is empty, return -5. If
+        // there was an exception, return -6. If the file is not empty, return 0.
+        private int verifyFileIsNotEmpty(string inputFileName)
+        {
+            try
+            {
+                FileInfo fileInfoObj = new FileInfo(inputFileName);
+                if (fileInfoObj.Length == 0)
+                {
+                    Console.WriteLine("The file is empty. Please enter a non-empty file in JSON format.");
+                    return -5;
+                }
+                else
+                {
+                    return 0;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return -6;
+            }
+        }
+    }
+}
