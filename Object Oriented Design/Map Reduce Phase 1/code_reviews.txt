@@ -1,0 +1,40 @@
+Code Reviews
+4/8/2022: Zoom -> 2 hours
+•	Got Github down
+•	Go over project
+•	Both will look at Executive
+•	Anthony
+o	Reduce and sorting
+•	Colton
+o	Workflow, File Management, and Map
+
+4/10/2022: texts
+•	“syntax error ‘export’” with map() function---solved
+
+4/11/2022: texts
+•	Set zoom meet time
+•	Went over the BOOST library download
+4/12/2022: Zoom -> 2 hours
+•	Went over progress on files. 
+•	Talk through each others work
+•	Things we want to improve
+4/14/2022:Texts
+•	Went over BOOST testing
+4/15/2022: Texts
+•	Implementation of try-catch blocks
+4/16/2022: Texts
+•	Found bug with BOOST and reading space char in tokenizer ---Solution found
+•	Program complete—Needs to be cleaned
+4/20/2022: Texts
+•	BOOST logging added to program
+4/22/2022: Phone call ->1.5 hours
+•	Went over issue with BOOST-Program working on one computer and not another
+•	New version of program that cuts run time in half.
+
+4/26/2022: Texts
+•	Program complete
+•	Added README 
+•	Added test file
+•	Added result file
+
+*Notes on code provided in github
