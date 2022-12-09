@@ -1,0 +1,155 @@
+﻿<Window x:Class="Project4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="520">
+    <Grid Background="White" Margin="10,0,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="1" Margin="0,10,0,0"  x:Name="AxisLabel"  FontWeight="Bold" Content="2020 NFL Season"  />
+
+        <Label Grid.Row="4" Grid.Column="0" Margin="0,5,0,0"  x:Name="CardinalsLabel"  FontWeight="Bold" Content="AZ Cardinals: "  />
+        <TextBox Grid.Row="4" Grid.Column="1" Margin="5,8,0,4" x:Name="CardinalsTextBox" MinWidth="50"  VerticalAlignment="Center" 
+                         HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <Label Grid.Row="5" Grid.Column="0" Margin="0,5,0,0"  x:Name="FalconsLabel"  FontWeight="Bold" Content="ATL Falcons: "  />
+        <TextBox Grid.Row="5" Grid.Column="1" Margin="5,8,0,4" x:Name="FalconsTextBox" MinWidth="50"  VerticalAlignment="Center" 
+                         HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <Label Grid.Row="6" Grid.Column="0" Margin="0,5,0,0" x:Name="RavensLabel"  FontWeight="Bold" Content="BAL Ravens: "/>
+        <TextBox Grid.Row="6" Grid.Column="1" Margin="5,8,0,0" x:Name="RavensTextBox" MinWidth="50"  VerticalAlignment="Center" 
+                         HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <Label Grid.Row="7" Grid.Column="0" Margin="0,5,0,0" x:Name="BillsLabel"  FontWeight="Bold" Content="BUF Bills: "  />
+        <TextBox Grid.Row="7" Grid.Column="1" Margin="5,8,0,0" x:Name="BillsTextBox" MinWidth="50"  VerticalAlignment="Center" 
+                         HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <Label Grid.Row="8" Grid.Column="0" Margin="0,5,0,0" x:Name="PanthersLabel"  FontWeight="Bold" Content="CAR Panthers: "  />
+        <TextBox Grid.Row="8" Grid.Column="1" Margin="5,8,0,0" x:Name="PanthersTextBox" MinWidth="50"  VerticalAlignment="Center" 
+                         HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <Label Grid.Row="9" Grid.Column="0" Margin="0,5,0,0" x:Name="BearsLabel"  FontWeight="Bold" Content="CHI Bears: "  />
+        <TextBox Grid.Row="9" Grid.Column="1" Margin="5,8,0,0" x:Name="BearsTextBox" MinWidth="50"  VerticalAlignment="Center" 
+                         HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <Label Grid.Row="10" Grid.Column="0" Margin="0,5,0,0" x:Name="BrownsLabel"  FontWeight="Bold" Content="CLE Browns: "  />
+        <TextBox Grid.Row="10" Grid.Column="1" Margin="5,8,0,0" x:Name="BrownsTextBox" MinWidth="50"  VerticalAlignment="Center" 
+                         HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <Label Grid.Row="11" Grid.Column="0" Margin="0,5,0,0" x:Name="CowboysLabel"  FontWeight="Bold" Content="DAL Cowboys: "  />
+        <TextBox Grid.Row="11" Grid.Column="1" Margin="5,8,0,0" x:Name="CowboysTextBox" MinWidth="50"  VerticalAlignment="Center" 
+                         HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <Label Grid.Row="12" Grid.Column="0" Margin="0,5,0,0" x:Name="BroncosLabel"  FontWeight="Bold" Content="DEN Broncos: "  />
+        <TextBox Grid.Row="12" Grid.Column="1" Margin="5,8,0,0" x:Name="BroncosTextBox" MinWidth="50"  VerticalAlignment="Center" 
+                         HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <Label Grid.Row="13" Grid.Column="0" Margin="0,5,0,0" x:Name="LionsLabel"  FontWeight="Bold" Content="DET Lions: "  />
+        <TextBox Grid.Row="13" Grid.Column="1" Margin="5,8,0,0" x:Name="LionsTextBox" MinWidth="50"  VerticalAlignment="Center" 
+                         HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <Label Grid.Row="14" Grid.Column="0" Margin="0,5,0,0" x:Name="PackersLabel"  FontWeight="Bold" Content="GB Packers: "  />
+        <TextBox Grid.Row="14" Grid.Column="1" Margin="5,8,0,0" x:Name="PackersTextBox" MinWidth="50"  VerticalAlignment="Center" 
+                         HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <Label Grid.Row="4" Grid.Column="3" Margin="0,5,0,0" x:Name="GiantsLabel"  FontWeight="Bold" Content="NY Giants: "  />
+        <TextBox Grid.Row="4" Grid.Column="4" Margin="5,8,0,0" x:Name="GiantsTextBox" MinWidth="50"  VerticalAlignment="Center" 
+                         HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <Label Grid.Row="5" Grid.Column="3" Margin="0,5,0,0" x:Name="ColtsLabel"  FontWeight="Bold" Content="IND Colts: "  />
+        <TextBox Grid.Row="5" Grid.Column="4" Margin="5,8,0,0" x:Name="ColtsTextBox" MinWidth="50"  VerticalAlignment="Center" 
+                         HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <Label Grid.Row="6" Grid.Column="3" Margin="0,5,0,0" x:Name="JaguarsLabel"  FontWeight="Bold" Content="JAC Jaguars: "  />
+        <TextBox Grid.Row="6" Grid.Column="4" Margin="5,8,0,0" x:Name="JaguarsTextBox" MinWidth="50"  VerticalAlignment="Center" 
+                         HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <Label Grid.Row="7" Grid.Column="3" Margin="0,5,0,0" x:Name="ChiefsLabel"  FontWeight="Bold" Content="KC Chiefs: "  />
+        <TextBox Grid.Row="7" Grid.Column="4" Margin="5,8,0,0" x:Name="ChiefsTextBox" MinWidth="50"  VerticalAlignment="Center" 
+                         HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <Label Grid.Row="8" Grid.Column="3" Margin="0,5,0,0" x:Name="DolphinsLabel"  FontWeight="Bold" Content="MIA Dolphins: "  />
+        <TextBox Grid.Row="8" Grid.Column="4" Margin="5,8,0,0" x:Name="DolphinsTextBox" MinWidth="50"  VerticalAlignment="Center" 
+                         HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <Label Grid.Row="9" Grid.Column="3" Margin="0,5,0,0" x:Name="VikingsLabel"  FontWeight="Bold" Content="MIN Vikings: "  />
+        <TextBox Grid.Row="9" Grid.Column="4" Margin="5,8,0,0" x:Name="VikingsTextBox" MinWidth="50"  VerticalAlignment="Center" 
+                         HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <Label Grid.Row="10" Grid.Column="3" Margin="0,5,0,0" x:Name="PatriotsLabel"  FontWeight="Bold" Content="NE Patriots: "  />
+        <TextBox Grid.Row="10" Grid.Column="4" Margin="5,8,0,0" x:Name="PatriotsTextBox" MinWidth="50"  VerticalAlignment="Center" 
+                         HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <Label Grid.Row="11" Grid.Column="3" Margin="0,5,0,0" x:Name="SaintsLabel"  FontWeight="Bold" Content="NL Saints: "  />
+        <TextBox Grid.Row="11" Grid.Column="4" Margin="5,8,0,0" x:Name="SaintsTextBox" MinWidth="50"  VerticalAlignment="Center" 
+                         HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <Label Grid.Row="12" Grid.Column="3" Margin="0,5,0,0" x:Name="JetsLabel"  FontWeight="Bold" Content="NY Jets: "  />
+        <TextBox Grid.Row="12" Grid.Column="4" Margin="5,8,0,0" x:Name="JetsTextBox" MinWidth="50"  VerticalAlignment="Center" 
+                         HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <Label Grid.Row="13" Grid.Column="3" Margin="0,5,0,0" x:Name="RaidersLabel"  FontWeight="Bold" Content="OAK Raiders: "  />
+        <TextBox Grid.Row="13" Grid.Column="4" Margin="5,8,0,0" x:Name="RaidersTextBox" MinWidth="50"  VerticalAlignment="Center" 
+                         HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <Label Grid.Row="14" Grid.Column="3" Margin="0,5,0,0" x:Name="EaglesLabel"  FontWeight="Bold" Content="PHI Eagles: "  />
+        <TextBox Grid.Row="14" Grid.Column="4" Margin="5,8,0,0" x:Name="EaglesTextBox" MinWidth="50"  VerticalAlignment="Center" 
+                         HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <Label Grid.Row="4" Grid.Column="5" Margin="0,5,0,0" x:Name="SteelersLabel"  FontWeight="Bold" Content="PIT Steelers: "  />
+        <TextBox Grid.Row="4" Grid.Column="6" Margin="5,8,0,0" x:Name="SteelersTextBox" MinWidth="50"  VerticalAlignment="Center" 
+                         HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <Label Grid.Row="5" Grid.Column="5" Margin="0,5,0,0" x:Name="ChargersLabel"  FontWeight="Bold" Content="SD Chargers: "  />
+        <TextBox Grid.Row="5" Grid.Column="6" Margin="5,8,0,0" x:Name="ChargersTextBox" MinWidth="50"  VerticalAlignment="Center" 
+                         HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <Label Grid.Row="6" Grid.Column="5" Margin="0,5,0,0" x:Name="SeahawksLabel"  FontWeight="Bold" Content="SEA Seahawks: "  />
+        <TextBox Grid.Row="6" Grid.Column="6" Margin="5,8,0,0" x:Name="SeahawksTextBox" MinWidth="50"  VerticalAlignment="Center" 
+                         HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <Label Grid.Row="7" Grid.Column="5" Margin="0,5,0,0" x:Name="FortyNinersLabel"  FontWeight="Bold" Content="SF 49'ers: "  />
+        <TextBox Grid.Row="7" Grid.Column="6" Margin="5,8,0,0" x:Name="FortyNinersTextBox" MinWidth="50"  VerticalAlignment="Center" 
+                         HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <Label Grid.Row="8" Grid.Column="5" Margin="0,5,0,0" x:Name="RamsLabel"  FontWeight="Bold" Content="STL Rams: "  />
+        <TextBox Grid.Row="8" Grid.Column="6" Margin="5,8,0,0" x:Name="RamsTextBox" MinWidth="50"  VerticalAlignment="Center" 
+                         HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <Label Grid.Row="9" Grid.Column="5" Margin="0,5,0,0" x:Name="BuccaneersLabel"  FontWeight="Bold" Content="TB Buccaneers: "  />
+        <TextBox Grid.Row="9" Grid.Column="6" Margin="5,8,0,0" x:Name="BuccaneersTextBox" MinWidth="50"  VerticalAlignment="Center" 
+                         HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <Label Grid.Row="10" Grid.Column="5" Margin="0,5,0,0" x:Name="TitansLabel"  FontWeight="Bold" Content="TEN Titans: "  />
+        <TextBox Grid.Row="10" Grid.Column="6" Margin="5,8,0,0" x:Name="TitansTextBox" MinWidth="50"  VerticalAlignment="Center" 
+                         HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <Label Grid.Row="11" Grid.Column="5" Margin="0,5,0,0" x:Name="CommandersLabel"  FontWeight="Bold" Content="WSH Commanders: "  />
+        <TextBox Grid.Row="11" Grid.Column="6" Margin="5,8,0,0" x:Name="CommandersTextBox" MinWidth="50"  VerticalAlignment="Center" 
+                         HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <Label Grid.Row="12" Grid.Column="5" Margin="0,5,0,0" x:Name="BengalsLabel"  FontWeight="Bold" Content="CIN Bengals: "  />
+        <TextBox Grid.Row="12" Grid.Column="6" Margin="5,8,0,0" x:Name="BengalsTextBox" MinWidth="50"  VerticalAlignment="Center" 
+                         HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <Label Grid.Row="13" Grid.Column="5" Margin="0,5,0,0" x:Name="TexansLabel"  FontWeight="Bold" Content="HOU Texans: "  />
+        <TextBox Grid.Row="13" Grid.Column="6" Margin="5,8,0,0" x:Name="TexansTextBox" MinWidth="50"  VerticalAlignment="Center" 
+                         HorizontalContentAlignment="Right" IsReadOnly="True"/>
+        <Button x:Name="CollectDataButton" Grid.Row ="1" Grid.Column="0" Grid.ColumnSpan="2" Content="Collect Team Data" HorizontalAlignment="Left" 
+                Height="55" Margin="0,0,0,0" VerticalAlignment="Center" MinWidth="150" Click="CollectDataButton_Click"/>
+        <ProgressBar x:Name="PercentProgressBar" Grid.Row ="1" Grid.Column="2" Grid.ColumnSpan="4" Height="55" Margin="0,0,0,0" 
+                     VerticalAlignment="Center"/>
+        <Label Grid.Row="1" Grid.Column="5" Margin="0,13,0,0"  x:Name="PercentLabel"  FontWeight="Bold" Content="%"/>
+        <Label Grid.Row="1" Grid.Column="5" Margin="-20,13,0,0"  x:Name="ProgressLabel"  FontWeight="Bold" Content="0"/>
+        <Button x:Name="MonitorButton" Grid.Row="1" Grid.Column="6" Margin="7,0,0,0" IsEnabled="True" Foreground="Green" Background="Green">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="25"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>
+
