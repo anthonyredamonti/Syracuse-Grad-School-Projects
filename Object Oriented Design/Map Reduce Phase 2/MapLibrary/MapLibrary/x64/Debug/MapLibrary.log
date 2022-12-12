@@ -1,0 +1,17 @@
+﻿  dllmain.cpp
+  MapLibrary.cpp
+C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project2\MapReduce_Project_Phase-2-main\MapLibrary\MapLibrary\MapLibrary.cpp(17,1): warning C4297: 'Map': function assumed not to throw an exception but does
+C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project2\MapReduce_Project_Phase-2-main\MapLibrary\MapLibrary\MapLibrary.cpp(17,1): message : __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project2\MapReduce_Project_Phase-2-main\MapLibrary\MapLibrary\MapLibrary.cpp(23,1): warning C4297: 'Map': function assumed not to throw an exception but does
+C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project2\MapReduce_Project_Phase-2-main\MapLibrary\MapLibrary\MapLibrary.cpp(23,1): message : __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project2\MapReduce_Project_Phase-2-main\MapLibrary\MapLibrary\MapLibrary.cpp(50,1): warning C4297: 'tokenize': function assumed not to throw an exception but does
+C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project2\MapReduce_Project_Phase-2-main\MapLibrary\MapLibrary\MapLibrary.cpp(50,1): message : __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project2\MapReduce_Project_Phase-2-main\MapLibrary\MapLibrary\MapLibrary.cpp(55,1): warning C4297: 'tokenize': function assumed not to throw an exception but does
+C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project2\MapReduce_Project_Phase-2-main\MapLibrary\MapLibrary\MapLibrary.cpp(55,1): message : __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project2\MapReduce_Project_Phase-2-main\MapLibrary\MapLibrary\MapLibrary.cpp(81,1): warning C4297: 'exportt': function assumed not to throw an exception but does
+C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project2\MapReduce_Project_Phase-2-main\MapLibrary\MapLibrary\MapLibrary.cpp(81,1): message : __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project2\MapReduce_Project_Phase-2-main\MapLibrary\MapLibrary\MapLibrary.cpp(86,1): warning C4297: 'exportt': function assumed not to throw an exception but does
+C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project2\MapReduce_Project_Phase-2-main\MapLibrary\MapLibrary\MapLibrary.cpp(86,1): message : __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+  Generating Code...
+     Creating library C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project2\MapReduce_Project_Phase-2-main\MapLibrary\x64\Debug\MapLibrary.lib and object C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project2\MapReduce_Project_Phase-2-main\MapLibrary\x64\Debug\MapLibrary.exp
+  MapLibrary.vcxproj -> C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project2\MapReduce_Project_Phase-2-main\MapLibrary\x64\Debug\MapLibrary.dll
