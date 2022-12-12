@@ -1,0 +1,96 @@
+Running 8 test cases...
+*****************Map_Test***************
+Input file successfully opened.
+Map test has been passed.
+*****************Sort_Test***************
+
+Sorting has begun. Words are being discovered.
+
+The number of words found in the intermediate file: 2
+These words are now being searched for duplicate entries.
+
+Sorting has finished.
+Sort test has been passed.
+*****************Reduce_Test***************
+Reduce test has been passed.
+*****************Consistency_Test***************
+Input file successfully opened.
+
+Sorting has begun. Words are being discovered.
+
+The number of words found in the intermediate file: 1100
+These words are now being searched for duplicate entries.
+
+Sorting has finished.
+
+Workflow is now parsing the intermediate file and calling the Reduce class on each entry.
+
+Success. Program will now terminate.
+
+Performing second workflow on same input.
+
+Input file successfully opened.
+
+Sorting has begun. Words are being discovered.
+
+The number of words found in the intermediate file: 1100
+These words are now being searched for duplicate entries.
+
+Sorting has finished.
+
+Workflow is now parsing the intermediate file and calling the Reduce class on each entry.
+
+Success. Program will now terminate.
+Consistency test has been passed.
+*****************SeparateFileFromDirectory_Test***************
+SeparateFileFromDirectory test has been passed.
+*****************FullRunFile_Test***************
+Input file successfully opened.
+
+Sorting has begun. Words are being discovered.
+
+The number of words found in the intermediate file: 2
+These words are now being searched for duplicate entries.
+
+Sorting has finished.
+
+Workflow is now parsing the intermediate file and calling the Reduce class on each entry.
+
+Success. Program will now terminate.
+RunFullFile test has been passed.
+*****************FullRunDirectory_Test***************
+Input file successfully opened.
+
+Sorting has begun. Words are being discovered.
+
+The number of words found in the intermediate file: 2
+These words are now being searched for duplicate entries.
+
+Sorting has finished.
+
+Workflow is now parsing the intermediate file and calling the Reduce class on each entry.
+
+Success. Program will now terminate.
+("this"), 1FullRunDirectory test has been passed.
+*****************ValidFileCheck_Test***************
+[2022-05-09 14:03:20.486514] [0x00005230] [warning] Input Directory does not exist.
+
+Exception occurred: Not a valid file directory/location.
+
+Please enter a valid input file directory.
+Input File Directory: input.txt
+[2022-05-09 14:03:28.640979] [0x00005230] [warning] Program must write to a '.txt' file location.
+
+Exception occurred: Not a valid file directory/location.
+
+Please enter a valid temporary intermediate file directory.
+Intermediate File Directory: intermediate.txt
+[2022-05-09 14:03:32.884309] [0x00005230] [warning] Program must write to a '.txt' file location.
+
+Exception occurred: Not a valid file directory/location.
+
+Please enter a valid final output file directory.
+Output File Directory: output.txt
+ValidFileCheck test has been passed.
+
+*** No errors detected
