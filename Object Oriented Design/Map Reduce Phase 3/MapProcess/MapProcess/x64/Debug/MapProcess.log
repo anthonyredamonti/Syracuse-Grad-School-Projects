@@ -1,0 +1,4 @@
+﻿  Main.cpp
+C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project3\Phase_3_update\MapReduce_Project_Phase-3-two\MapProcess\MapProcess\Main.cpp(147,60): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  MapProcess.vcxproj -> C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project3\Phase_3_update\MapReduce_Project_Phase-3-two\MapProcess\x64\Debug\MapProcess.exe
+  0 File(s) copied
