@@ -1,0 +1,4 @@
+[2022-06-04 16:51:00.362176] [0x000076d0] [info] [0x000088f8] [1] An informational severity message
+[2022-06-04 16:51:00.364169] [0x000076d0] [warning] [0x000088f8] [2] A warning severity message
+[2022-06-04 16:51:00.364169] [0x000076d0] [error] [0x000088f8] [3] An error severity message
+[2022-06-04 16:51:00.364169] [0x000076d0] [fatal] [0x000088f8] [4] A fatal severity message
