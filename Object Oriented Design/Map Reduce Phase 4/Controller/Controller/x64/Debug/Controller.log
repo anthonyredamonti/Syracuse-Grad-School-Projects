@@ -1,0 +1,5 @@
+﻿  Main.cpp
+C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project4\MapReduce_Project_Phase-4-main\Controller\Controller\Main.cpp(10,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project4\MapReduce_Project_Phase-4-main\Controller\Controller\Main.cpp(70,74): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project4\MapReduce_Project_Phase-4-main\Controller\Controller\Main.cpp(143,74): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  Controller.vcxproj -> C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project4\MapReduce_Project_Phase-4-main\Controller\x64\Debug\Controller.exe
