@@ -1,0 +1,5 @@
+﻿  Main.cpp
+C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project4\MapReduce_Project_Phase-4-main\Stub2\Stub2\Main.cpp(13,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project4\MapReduce_Project_Phase-4-main\Stub2\Stub2\Main.cpp(98,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project4\MapReduce_Project_Phase-4-main\Stub2\Stub2\Main.cpp(199,68): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  Stub2.vcxproj -> C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project4\MapReduce_Project_Phase-4-main\Stub2\x64\Debug\Stub2.exe
