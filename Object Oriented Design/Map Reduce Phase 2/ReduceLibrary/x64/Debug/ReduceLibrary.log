@@ -1,0 +1,15 @@
+﻿  dllmain.cpp
+  ReduceLibrary.cpp
+C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project2\Phase_2_update\MapReduce_Project_Phase-2-main\ReduceLibrary\ReduceLibrary\ReduceLibrary.h(23,1): warning C4005: '_WIN32_WINNT': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\sdkddkver.h(218): message : see previous definition of '_WIN32_WINNT'
+C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project2\Phase_2_update\MapReduce_Project_Phase-2-main\ReduceLibrary\ReduceLibrary\ReduceLibrary.cpp(57,1): warning C4297: 'Reduce': function assumed not to throw an exception but does
+C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project2\Phase_2_update\MapReduce_Project_Phase-2-main\ReduceLibrary\ReduceLibrary\ReduceLibrary.cpp(57,1): message : __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project2\Phase_2_update\MapReduce_Project_Phase-2-main\ReduceLibrary\ReduceLibrary\ReduceLibrary.cpp(63,1): warning C4297: 'Reduce': function assumed not to throw an exception but does
+C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project2\Phase_2_update\MapReduce_Project_Phase-2-main\ReduceLibrary\ReduceLibrary\ReduceLibrary.cpp(63,1): message : __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project2\Phase_2_update\MapReduce_Project_Phase-2-main\ReduceLibrary\ReduceLibrary\ReduceLibrary.cpp(88,1): warning C4297: 'ReduceExport': function assumed not to throw an exception but does
+C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project2\Phase_2_update\MapReduce_Project_Phase-2-main\ReduceLibrary\ReduceLibrary\ReduceLibrary.cpp(88,1): message : __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project2\Phase_2_update\MapReduce_Project_Phase-2-main\ReduceLibrary\ReduceLibrary\ReduceLibrary.cpp(94,1): warning C4297: 'ReduceExport': function assumed not to throw an exception but does
+C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project2\Phase_2_update\MapReduce_Project_Phase-2-main\ReduceLibrary\ReduceLibrary\ReduceLibrary.cpp(94,1): message : __declspec(nothrow), throw(), noexcept(true), or noexcept was specified on the function
+  Generating Code...
+     Creating library C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project2\Phase_2_update\MapReduce_Project_Phase-2-main\ReduceLibrary\x64\Debug\ReduceLibrary.lib and object C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project2\Phase_2_update\MapReduce_Project_Phase-2-main\ReduceLibrary\x64\Debug\ReduceLibrary.exp
+  ReduceLibrary.vcxproj -> C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project2\Phase_2_update\MapReduce_Project_Phase-2-main\ReduceLibrary\x64\Debug\ReduceLibrary.dll
