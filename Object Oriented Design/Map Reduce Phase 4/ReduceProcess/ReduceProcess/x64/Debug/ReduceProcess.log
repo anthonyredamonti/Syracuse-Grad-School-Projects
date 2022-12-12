@@ -1,0 +1,5 @@
+﻿  Main.cpp
+C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project3\Phase_3_update\MapReduce_Project_Phase-3-two\ReduceProcess\ReduceProcess\Main.cpp(126,60): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project3\Phase_3_update\MapReduce_Project_Phase-3-two\ReduceProcess\ReduceProcess\Main.cpp(147,48): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  ReduceProcess.vcxproj -> C:\Users\Colton Wilson\Desktop\CIS687 OOD\Project3\Phase_3_update\MapReduce_Project_Phase-3-two\ReduceProcess\x64\Debug\ReduceProcess.exe
+  0 File(s) copied
