@@ -1,0 +1,21 @@
+https://www.youtube.com/watch?v=ePr2MgQkqL0 
+
+import time
+from qiskit import BasicAer
+from qiskit.aqua.algorithms.amplitude_amplifiers import Grover
+from qiskit.aqua.components.oracles import LogicalExpressionOracle
+from qiskit.tools.visualization import plot_histogram
+
+logicalExpression = '(((a & b) | (c & d)) & ~(a & c))'
+algorithm = Grover(LogicalExpressionOracle(logicalExpression))
+backend = BasicAer.get_backend('qasm_simulator')
+
+StartTime1 = time.time()
+result = algorithm.run(backend)
+EndTime1 = time.time()
+
+TotalTime = (EndTime1 - StartTime1)
+print("The total time for the 4-bit calculation: {0}".format("{:.{}f}".format(TotalTime, 8)))
+
+
+plot_histogram(result['measurement'], title = "Possible Combinations", bar_labels = True)
