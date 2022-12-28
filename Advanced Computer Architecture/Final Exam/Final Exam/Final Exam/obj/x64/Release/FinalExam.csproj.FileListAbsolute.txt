@@ -1,0 +1,10 @@
+C:\Users\aredamonti\projects\Advanced Computer Architecture\Final Exam\Final Exam\FinalExam\bin\x64\Release\FinalExam.exe.config
+C:\Users\aredamonti\projects\Advanced Computer Architecture\Final Exam\Final Exam\FinalExam\bin\x64\Release\FinalExam.exe
+C:\Users\aredamonti\projects\Advanced Computer Architecture\Final Exam\Final Exam\FinalExam\bin\x64\Release\FinalExam.pdb
+C:\Users\aredamonti\projects\Advanced Computer Architecture\Final Exam\Final Exam\FinalExam\obj\x64\Release\FinalExam.csprojAssemblyReference.cache
+C:\Users\aredamonti\projects\Advanced Computer Architecture\Final Exam\Final Exam\FinalExam\obj\x64\Release\FinalExam.FinalExam.resources
+C:\Users\aredamonti\projects\Advanced Computer Architecture\Final Exam\Final Exam\FinalExam\obj\x64\Release\FinalExam.Properties.Resources.resources
+C:\Users\aredamonti\projects\Advanced Computer Architecture\Final Exam\Final Exam\FinalExam\obj\x64\Release\FinalExam.csproj.GenerateResource.cache
+C:\Users\aredamonti\projects\Advanced Computer Architecture\Final Exam\Final Exam\FinalExam\obj\x64\Release\FinalExam.csproj.CoreCompileInputs.cache
+C:\Users\aredamonti\projects\Advanced Computer Architecture\Final Exam\Final Exam\FinalExam\obj\x64\Release\FinalExam.exe
+C:\Users\aredamonti\projects\Advanced Computer Architecture\Final Exam\Final Exam\FinalExam\obj\x64\Release\FinalExam.pdb
