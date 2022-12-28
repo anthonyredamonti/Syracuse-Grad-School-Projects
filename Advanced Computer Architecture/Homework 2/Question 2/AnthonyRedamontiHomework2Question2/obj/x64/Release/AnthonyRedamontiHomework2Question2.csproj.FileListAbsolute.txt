@@ -1,0 +1,10 @@
+C:\Users\aredamonti\projects\Advanced Computer Architecture\Homework 2\Question 2\AnthonyRedamontiHomework2Question2\bin\x64\Release\AnthonyRedamontiHomework2Question2.exe.config
+C:\Users\aredamonti\projects\Advanced Computer Architecture\Homework 2\Question 2\AnthonyRedamontiHomework2Question2\bin\x64\Release\AnthonyRedamontiHomework2Question2.exe
+C:\Users\aredamonti\projects\Advanced Computer Architecture\Homework 2\Question 2\AnthonyRedamontiHomework2Question2\bin\x64\Release\AnthonyRedamontiHomework2Question2.pdb
+C:\Users\aredamonti\projects\Advanced Computer Architecture\Homework 2\Question 2\AnthonyRedamontiHomework2Question2\obj\x64\Release\AnthonyRedamontiHomework2Question2.csprojAssemblyReference.cache
+C:\Users\aredamonti\projects\Advanced Computer Architecture\Homework 2\Question 2\AnthonyRedamontiHomework2Question2\obj\x64\Release\AnthonyRedamontiHomework2Question2.Mars.resources
+C:\Users\aredamonti\projects\Advanced Computer Architecture\Homework 2\Question 2\AnthonyRedamontiHomework2Question2\obj\x64\Release\AnthonyRedamontiHomework2Question2.Properties.Resources.resources
+C:\Users\aredamonti\projects\Advanced Computer Architecture\Homework 2\Question 2\AnthonyRedamontiHomework2Question2\obj\x64\Release\AnthonyRedamontiHomework2Question2.csproj.GenerateResource.cache
+C:\Users\aredamonti\projects\Advanced Computer Architecture\Homework 2\Question 2\AnthonyRedamontiHomework2Question2\obj\x64\Release\AnthonyRedamontiHomework2Question2.csproj.CoreCompileInputs.cache
+C:\Users\aredamonti\projects\Advanced Computer Architecture\Homework 2\Question 2\AnthonyRedamontiHomework2Question2\obj\x64\Release\AnthonyRedamontiHomework2Question2.exe
+C:\Users\aredamonti\projects\Advanced Computer Architecture\Homework 2\Question 2\AnthonyRedamontiHomework2Question2\obj\x64\Release\AnthonyRedamontiHomework2Question2.pdb
