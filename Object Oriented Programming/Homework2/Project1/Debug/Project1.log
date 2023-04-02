@@ -1,0 +1,7 @@
+﻿  Account.cpp
+C:\Users\aredamonti\projects\Intro To C++ Programming\Homework2\Project1\Account.cpp(82,36): error C2084: function 'int Account::getCreditsThisMonth(void)' already has a body
+C:\Users\aredamonti\projects\Intro To C++ Programming\Homework2\Project1\Account.cpp(71): message : see previous definition of 'getCreditsThisMonth'
+C:\Users\aredamonti\projects\Intro To C++ Programming\Homework2\Project1\Account.cpp(88,62): error C2084: function 'void Account::setCreditsThisMonth(int)' already has a body
+C:\Users\aredamonti\projects\Intro To C++ Programming\Homework2\Project1\Account.cpp(77): message : see previous definition of 'setCreditsThisMonth'
+  Main.cpp
+  Generating Code...
