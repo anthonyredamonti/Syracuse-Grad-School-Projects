@@ -1,0 +1,10 @@
+Below is the message decoded in OFB mode.
+
+This is a known message!
+a4 69 b1 c5 02 c1 ca b9 66 96 5e 50 42 54 38 e1 bb 1b 5f 90 37 a4 c1 59
+
+bf 73 bc d3 50 92 99 d5 66 c3 5b 5d 45 03 37 e1 bb 17 5f 90 3f af c1 59
+                         a                   _  m     s  s        e  !
+						 
+CFB does not do this in between cycles (wouldn't have this problem after a 
+certain point).
